@@ -1,0 +1,19 @@
+import method
+print("----------------指令列表-----------------")
+print("i:輸入一組號碼")
+print("p:印出蒐集的號碼末三碼")
+print("f:對獎")
+print("n:找還沒蒐集到的末三碼")
+print("c:顯示目前蒐集幾張發票")
+print("q:結束")
+print("-----------------------------------------")
+com = input("輸入指令:")
+while (True) :
+  if ( com == 'i' ) : method.InsertANumber()
+  elif ( com == 'p' ) : method.PrintOnlyThree()
+  elif ( com == 'f' ) : method.FindTheNumber()
+  elif ( com == 'n' ) : method.FindTheNull()
+  elif ( com == 'c' ) : print(method.CountTheTicket())
+  elif ( com == 'q' ) : break
+  else : print("輸入錯誤,請再輸入一次!")
+  com = input("輸入指令:")
